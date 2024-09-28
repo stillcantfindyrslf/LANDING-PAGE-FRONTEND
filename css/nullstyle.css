@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: inherit;
+    font-style: inherit;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+input, button, textarea, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+input, button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
