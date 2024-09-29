@@ -8,16 +8,12 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
 }
-
 .wrapper {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.main {
-    flex: 1 1 auto;
+    color: #333333;
 }
 
 .header {
@@ -49,7 +45,6 @@ body {
     gap: 2.8rem;
 }
 .menu__item {
-
 }
 .menu__link {
     font-weight: 500;
@@ -87,9 +82,76 @@ body {
     background-color: #333333;
 }
 /*--------------------------------------------*/
+.main {
+    flex: 1 1 auto;
+}
+.banner {
+    background-color: #fed100;
+    height: 36.1rem;
+}
+.banner__container {
+    display: flex;
+    align-items: center;
+}
+.block-banner__title {
+    font-weight: 700;
+    font-size: 4.3rem;
+    line-height: 4.5rem;
+    margin-bottom: 1.75rem;
+}
+.block-banner__text {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 3.1rem;
+}
+.banner-block__button {
+    position: relative;
+    display: inline-block;
+}
+.banner-button {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 6rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f2f2f2;
+    background-color: #ff352b;
+    z-index: 2;
+}
+.banner-border__button {
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
+    padding: 1.6rem 9.2rem;
+    border: 0.15rem solid #f2f2f2;
+    z-index: 1;
+    /*pointer-events: none;*/
+}
+.delivery-info__icons {
+    padding-top: 4rem;
+    display: flex;
+    text-align: left;
+}
+.delivery-info__text {
+    padding-left: 0.6rem;
+    width: 8.1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+.banner__image {
+    padding-left: 169px;
+}
+.tablet-banner__image {
+    display: none;
+}
+
 @media (max-width: 64rem) {
     [class*="__container"] {
-        max-width: 46rem;
+        max-width: 44.1rem;
+    }
+    .header__container {
+        margin-top: 1.3rem;
     }
     .header__logo {
         font-size: 2.25rem;
@@ -106,10 +168,68 @@ body {
     .header__burger {
         display: block;
     }
+/*-------------------------*/
+    .banner {
+        height: 64rem;
+    }
+    .banner__container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .block-banner__title {
+        width: 37.25rem;
+        padding-top: 3.4rem;
+        margin-bottom: 0.6rem;
+        font-size: 3.5rem;
+        line-height: 4.1rem;
+        order: 1;
+    }
+    .block-banner__text {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 2.25rem;
+        order: 2;
+    }
+    .banner__image {
+        display: none;
+    }
+    .tablet-banner__image {
+        position: relative;
+        display: block;
+        left: 1.8rem;
+        order: 3;
+    }
+    .banner-block__button {
+        padding-bottom: 0;
+        order: 4;
+    }
+    .banner-button {
+        top: -0.3rem;
+        position: relative;
+        display: inline-block;
+        padding: 1.5rem 7rem;
+        font-size: 1.8rem;
+    }
+    .banner-border__button {
+        top: 0.5rem;
+        left: 8rem;
+        padding: 2.4rem 11.1rem;
+    }
+    .delivery-info__icons {
+        padding-left: 2rem;
+        order: 5;
+    }
 }
 @media (max-width: 47.93rem) {
     [class*="__container"] {
-        max-width: 44rem;
+        max-width: 30rem;
+    }
+    .header__container {
+        margin-top: 1.68rem;
     }
     .header__logo {
         font-size: 1rem;
@@ -129,5 +249,39 @@ body {
     .icon-menu {
         width: 2rem;
         height: 1.18rem;
+    }
+    /*-------------------------*/
+    .banner {
+        height: 37.3rem;
+    }
+    .block-banner__title {
+        margin: 0 auto;
+        width: 12.2rem;
+        padding-top: 1rem;
+        padding-bottom: 0.3rem;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+    .block-banner__text {
+        font-size: 1.1rem;
+        line-height: 1.31rem;
+    }
+    .mobile-banner__image {
+        width: 15.9rem;
+        height: 23.1rem;
+    }
+    .tablet-banner__image {
+        left: 0.6rem;
+    }
+    .banner-button {
+        top: -0.3rem;
+        padding: 1.3rem 6rem;
+        font-size: 1.25rem;
+    }
+    .banner-border__button {
+        display: none;
+    }
+    .delivery-info__icons {
+        display: none;
     }
 }
