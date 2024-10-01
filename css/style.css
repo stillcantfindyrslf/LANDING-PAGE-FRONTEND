@@ -189,6 +189,77 @@ body {
 .arrow-img-phone {
     display: none;
 }
+/*-------------------------*/
+.price__container {
+    height: 44.8rem;
+}
+.price-text__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+}
+.price__text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.price-cards__content {
+    margin-top: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+.card:nth-child(2) {
+    border: 1px solid #fed100;
+}
+.card {
+    width: 26.3rem;
+    height: 36.18rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ebebeb;
+}
+.card-info {
+    padding: 5.25rem 5.56rem;
+    text-align: center;
+}
+.card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.81rem;
+}
+.card-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.75rem;
+    margin-bottom: 3.6rem;
+    gap: 1.6rem;
+}
+.card-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.31rem;
+}
+.card-price {
+    padding-bottom: 3.37rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.card-btn {
+    padding: 0.7rem 5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: #fed100;
+}
+.card-btn-all-prices {
+    display: none;
+}
+.line-all-prices {
+    display: none;
+}
 
 @media (max-width: 64rem) {
     [class*="__container"] {
@@ -303,6 +374,87 @@ body {
         font-size: 1rem;
         line-height: 1.31rem;
     }
+    /*-------------------------*/
+    .price {
+        background-color: #F8FBFF;
+    }
+    .price__container {
+        height: 51rem;
+    }
+    .price-text__container {
+        width: 35rem;
+        padding-top: 3.75rem;
+        text-align: center;
+    }
+    .price__text {
+        padding-top: 0.75rem;
+    }
+    .price__title {
+        font-size: 1.8rem;
+        line-height: 2.25rem;
+    }
+    .price__text {
+        font-size: 1.5rem;
+    }
+    .price-cards__content {
+        margin-top: 2.8rem;
+        justify-content: center;
+    }
+    .card:nth-child(2) {
+        border: none;
+    }
+    .card:nth-child(1),
+    .card:nth-child(3) {
+        display: none;
+    }
+    .card {
+        width: 26.3rem;
+        height: 36.18rem;
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+    .card-info {
+        padding: 0 5.56rem;
+        text-align: center;
+    }
+    .card__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.81rem;
+    }
+    .card-items {
+        margin-top: 1.93rem;
+        margin-bottom: 3rem;
+        gap: 3rem;
+    }
+    .card-text {
+        font-size: 1.1rem;
+        line-height: 1.31rem;
+    }
+    .card-price {
+        padding-bottom: 3rem;
+    }
+    .card-btn {
+        padding: 1.2rem 7.5rem;
+        font-size: 1.75rem;
+    }
+    .card-btn-all-prices {
+        padding-top: 3rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.56rem;
+        font-weight: 500;
+        color: #333333;
+    }
+
+    .line-all-prices{
+        display: block;
+        width: 9.25rem;
+        border: 1px solid #333333;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 47.93rem) {
@@ -401,5 +553,80 @@ body {
     }
     .process-item__text {
         display: none;
+    }
+    /*-------------------------*/
+    .price {
+        background-color: #F8FBFF;
+    }
+    .price__container {
+        height: 33.4rem;
+    }
+    .price-text__container {
+        width: 18rem;
+        padding-top: 1.1rem;
+        text-align: center;
+    }
+    .price__text {
+        padding-top: 0.25rem;
+    }
+    .price__title {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    .price__text {
+        font-size: 1rem;
+    }
+    .price-cards__content {
+        margin-top: 1.25rem;
+        justify-content: center;
+    }
+    .card:nth-child(2) {
+        border: none;
+    }
+    .card:nth-child(1),
+    .card:nth-child(3) {
+        display: none;
+    }
+    .card {
+        width: 26.3rem;
+        height: 36.18rem;
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+    .card-info {
+        padding: 0 2.56rem;
+        text-align: center;
+    }
+    .card__title {
+        font-size: 1.12rem;
+        font-weight: 500;
+        line-height: 1.81rem;
+    }
+    .card-items {
+        margin-top: 1.5rem;
+        margin-bottom: 2.79rem;
+        gap: 1rem;
+    }
+    .card-text {
+        font-size: 1rem;
+        line-height: 1.31rem;
+    }
+    .card-price {
+        padding-bottom: 4rem;
+    }
+    .card-btn {
+        padding: 1.2rem 6rem;
+        font-size: 1.25rem;
+    }
+    .card-btn-all-prices {
+        padding-top: 2.5rem;
+        padding-bottom: 0.2rem;
+        font-size: 1rem;
+    }
+
+    .line-all-prices{
+        display: block;
+        width: 5rem;
     }
 }
