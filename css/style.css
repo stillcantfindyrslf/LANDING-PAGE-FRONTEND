@@ -260,6 +260,86 @@ body {
 .line-all-prices {
     display: none;
 }
+/*---------------------*/
+.fleet {
+    height: 46rem;
+}
+.fleet__container {
+    padding-top: 6.3rem;
+    width: 76rem;
+}
+.fleet-text__container {
+    text-align: center;
+    margin-bottom: 3.75rem;
+}
+.fleet__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.fleet__text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.fleet-select__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 2.8rem;
+}
+.fleet-btn {
+    display: flex;
+    padding: 0.7rem 3.6rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 1px solid #ebebeb;
+}
+.fleet-btn:nth-child(1) {
+    border: 1px solid #fed100;
+}
+.slider_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow-slider {
+    display: block;
+}
+.fleet-card__content {
+
+}
+.fleet-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.fleet-card__list {
+    margin-bottom: 2.3rem;
+    margin-top: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+.fleet-card__text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.check-icon {
+    margin-top: -0.17rem;
+    padding-right: 1rem;
+}
+.fleet-card-item {
+    display: flex;
+    justify-content: left;
+}
+.fleet-card__image {
+
+}
+.fleet-dots,
+.fleet-card-item__other-view {
+    display: none;
+}
 
 @media (max-width: 64rem) {
     [class*="__container"] {
@@ -455,6 +535,65 @@ body {
         border: 1px solid #333333;
         margin: 0 auto;
     }
+    /*---------------------*/
+    .fleet {
+        height: 60.6rem;
+    }
+    .fleet__container {
+        padding-top: 5.25rem;
+        max-width: 39rem;
+    }
+    .fleet-text__container {
+        margin-bottom: 2.8rem;
+    }
+    .fleet__title {
+        margin-bottom: 1.25rem;
+    }
+    .fleet-select__buttons {
+        gap: 4.68rem;
+        margin-bottom: 2.8rem;
+    }
+    .fleet-btn {
+        padding: 0 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border: none;
+    }
+    .fleet-btn:nth-child(1) {
+        border: none;
+        border-bottom: 1px solid #fed100;
+    }
+    .slider_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 37rem;
+    }
+    .fleet-card__content {
+        order: 2;
+    }
+    .fleet-card__list {
+        margin-top: 0;
+        margin-bottom: 3rem;
+        align-items: center;
+    }
+    .arrow-slider,
+    .fleet-card-item,
+    .fleet-card__title {
+        display: none;
+    }
+    .fleet-card-item__other-view {
+        padding-top: 0.75rem;
+        display: block;
+    }
+    .card-image {
+        width: 32.3rem;
+        height: 22.8rem;
+        order: 1;
+    }
+    .fleet-dots {
+        display: block;
+    }
 }
 
 @media (max-width: 47.93rem) {
@@ -624,9 +763,77 @@ body {
         padding-bottom: 0.2rem;
         font-size: 1rem;
     }
-
     .line-all-prices{
         display: block;
         width: 5rem;
+    }
+    /*---------------------*/
+    .fleet {
+        height: 36.9rem;
+    }
+    .fleet__container {
+        padding-top: 1.87rem;
+        max-width: 19rem;
+    }
+    .fleet-text__container {
+        margin-bottom: 0.75rem;
+    }
+    .fleet__title {
+        margin-bottom: 0.25rem;
+        font-size: 1.25rem;
+    }
+    .fleet__text {
+        font-size: 1rem;
+    }
+    .fleet-select__buttons {
+        gap: 2.1rem;
+        margin-bottom: 3rem;
+    }
+    .fleet-btn {
+        padding: 0 0;
+        font-size: 0.9rem;
+        font-weight: 400;
+        border: none;
+    }
+    .fleet-btn:nth-child(1) {
+        border: none;
+        border-bottom: 1px solid #fed100;
+    }
+    .slider_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 37rem;
+    }
+    .fleet-card__content {
+        order: 2;
+    }
+    .fleet-card__list {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        align-items: center;
+        gap: 1rem;
+    }
+    .arrow-slider,
+    .fleet-card-item,
+    .fleet-card__title {
+        display: none;
+        font-size: 0.9rem;
+    }
+    .fleet-card-item__other-view {
+        padding-top: 0.5rem;
+        display: block;
+    }
+    .card-image {
+        width: 20rem;
+        height: 14.1rem;
+        order: 1;
+    }
+    .fleet-dots {
+        display: block;
+    }
+    .fleet-dots__img {
+        width: 7.12rem;
+        height: 1.25rem;
     }
 }
