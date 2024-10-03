@@ -308,7 +308,6 @@ body {
     display: block;
 }
 .fleet-card__content {
-
 }
 .fleet-card__title {
     font-size: 1.5rem;
@@ -334,11 +333,64 @@ body {
     justify-content: left;
 }
 .fleet-card__image {
-
 }
 .fleet-dots,
 .fleet-card-item__other-view {
     display: none;
+}
+/*-------------------------*/
+.reviews {
+    margin-top: 3.2rem;
+    height: 41.56rem;
+    background-color: #fed100;
+}
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews__title {
+    padding-top: 6.2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.block-comments {
+    margin-top: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+.comment {
+    width: 25rem;
+}
+.comment-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 0.6rem;
+}
+.comment-info {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+.comment-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.block-read-more {
+    display: none;
+}
+.reviews-dots {
+    display: none;
+}
+.review-block__btn {
+}
+.review-btn {
+    padding: 0.7rem 4rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 1px solid;
 }
 
 @media (max-width: 64rem) {
@@ -528,7 +580,6 @@ body {
         font-weight: 500;
         color: #333333;
     }
-
     .line-all-prices{
         display: block;
         width: 9.25rem;
@@ -594,11 +645,49 @@ body {
     .fleet-dots {
         display: block;
     }
+    /*-------------------------*/
+    .reviews {
+        height: 39rem;
+    }
+    .reviews__title {
+        padding-top: 4rem;
+    }
+    .block-comments {
+        margin-bottom: 0;
+    }
+    .comment-info {
+        margin-bottom: 1.25rem;
+    }
+    .comment-text {
+        overflow: hidden;
+        height: 7.4rem;
+    }
+    .block-read-more {
+        margin-top: 1.1rem;
+        display: block;
+    }
+    .link-read-more {
+        color: #333333;
+        text-decoration: underline;
+    }
+    .reviews-dots {
+        margin-top: 2.25rem;
+        display: block;
+    }
+    .review-block__btn {
+        margin-top: 3.5rem;
+    }
+    .review-btn {
+        padding: 0.7rem 4rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        border: 1px solid;
+    }
 }
 
 @media (max-width: 47.93rem) {
     [class*="__container"] {
-        max-width: 30rem;
+        max-width: 20rem;
     }
     .header__container {
         margin-top: 1.68rem;
@@ -660,9 +749,6 @@ body {
     .process-info {
         padding-top: 4rem;
         height: 28.3rem;
-    }
-    .process-info__container {
-        max-width: 20rem;
     }
     .process-info__title {
         font-size: 1.25rem;
@@ -835,5 +921,51 @@ body {
     .fleet-dots__img {
         width: 7.12rem;
         height: 1.25rem;
+    }
+    /*-------------------------*/
+    .reviews {
+        margin-top: 0;
+        height: 35.8rem;
+    }
+    .reviews__title {
+        padding-top: 2.5rem;
+        font-size: 1.25rem;
+    }
+    .block-comments {
+        margin-top: 2.5rem;
+        margin-bottom: 0;
+    }
+    .comment:nth-child(1),
+    .comment:nth-child(3) {
+        display: none;
+    }
+    .comment {
+        width: 18rem;
+    }
+    .comment-name {
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding-bottom: 0.6rem;
+    }
+    .comment-info {
+        margin-bottom: 1.25rem;
+    }
+    .comment-text {
+        overflow: hidden;
+        height: 11rem;
+    }
+    .block-read-more {
+        margin-top: 0.8rem;
+        display: block;
+    }
+    .reviews-dots {
+        display: none;
+    }
+    .review-block__btn {
+        margin-top: 4rem;
+    }
+    .review-btn {
+        padding: 1rem 5rem;
+        white-space: nowrap;
     }
 }
