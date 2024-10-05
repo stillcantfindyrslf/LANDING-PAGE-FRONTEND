@@ -605,6 +605,14 @@ form {
     border: none;
     background: url('/img/icons/form/checked-data-processing.svg') 0 0 no-repeat;
 }
+/*---------------------------*/
+iframe {
+    width: 100vw;
+    height: 41rem;
+}
+.map-contacts {
+    display: none;
+}
 
 @media (max-width: 64rem) {
     [class*="__container"] {
@@ -898,7 +906,7 @@ form {
     }
     /*---------------------------*/
     .feedback__form {
-        height: 64rem;
+        height: 67rem;
     }
     .feedback-form__container {
         padding: 4.68rem 0;
@@ -1004,6 +1012,38 @@ form {
     .data-processing-label::before {
         width: 0.93rem;
         height: 0.93rem;
+    }
+    /*---------------------------*/
+    iframe {
+        width: 100vw;
+        height: 41rem;
+    }
+    .map-contacts {
+        display: block;
+        padding-top: 3.75rem;
+        padding-bottom: 8.25rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .contact-city {
+        padding-bottom: 0.75rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .contact-phone {
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 0.75rem;
+    }
+    .contact-email {
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+    .contact-line {
+        width: 12.9rem;
+        border: 1px solid;
+        margin: 0 auto;
     }
 }
 
@@ -1374,5 +1414,32 @@ form {
     .data-processing-label::before {
         width: 0.93rem;
         height: 0.93rem;
+    }
+    /*---------------------------*/
+    iframe {
+        width: 100vw;
+        height: 30.6rem;
+    }
+    .map-contacts {
+        padding-top: 1.25rem;
+        padding-bottom: 1.81rem;
+    }
+    .contact-city {
+        padding-bottom: 1.25rem;
+        font-size: 0.93rem;
+        font-weight: 400;
+    }
+    .contact-phone {
+        font-size: 0.93rem;
+        padding-bottom: 1.25rem;
+    }
+    .contact-email {
+        font-size: 0.93rem;
+        padding-bottom: 0.3rem;
+    }
+    .contact-line {
+        width: 6.6rem;
+        border: 1px solid;
+        margin: 0 auto;
     }
 }
