@@ -392,6 +392,219 @@ body {
     font-weight: 500;
     border: 1px solid;
 }
+/*---------------------------*/
+.feedback__form {
+    height: 67.25rem;
+}
+.feedback-form__container {
+    padding: 7.75rem 19rem;
+}
+.feedback-form__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+form {
+    padding-left: 0.68rem;
+    padding-right: 2.75rem;
+}
+.form-title {
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.block-contact__input {
+    padding-bottom: 4rem;
+    display: flex;
+    gap: 4.3rem;
+}
+.contact-input {
+    display: block;
+    width: 18.75rem;
+    height: 2.1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-bottom: 0.87rem;
+    border-bottom: 1px solid;
+}
+.select-location {
+    display: flex;
+    gap: 4.37rem;
+    padding-bottom: 3.87rem;
+}
+.label-title-location {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.label-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.select-input {
+    display: block;
+    width: 18.75rem;
+    height: 2.1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-top: 2.1rem;
+    border-bottom: 1px solid #333333;
+    padding-bottom:  0.87rem;
+}
+.block-radio-btn {
+    padding-top: 2.25rem;
+    padding-bottom: 4rem;
+    display: flex;
+    width: 42.5rem;
+    justify-content: space-between;
+}
+.radio-input {
+    display: none;
+}
+.radio-inp-text {
+    display: flex;
+    height: 1.6rem;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.5rem;
+    user-select: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.radio-inp-text::before {
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 1.37rem;
+    height: 1.37rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid #33333366;
+    background-color: #F8F8F8;
+}
+.radio-input:checked + .radio-inp-text::before {
+    border: 2px solid #fed100;
+    background: url('/img/icons/form/checked-dot.svg') 0 0 no-repeat;
+    background-position: center;
+}
+.additional-services-checkbox {
+    display: flex;
+    gap: 40px;
+    padding-top: 2rem;
+}
+.additional-input {
+    display: none;
+}
+.additional-checkbox {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.25rem;
+    user-select: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.additional-checkbox::before {
+    left: 0;
+    content: "";
+    width: 1.37rem;
+    height: 1.37rem;
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    border: 2px solid #33333366;
+    background-color: #F8F8F8;
+}
+.additional-input:checked + .additional-checkbox::before {
+    border: 2px solid #fed100;
+    border-radius: 2px;
+    background: url('/img/icons/form/checked-box.svg') 0 0 no-repeat;
+    background-position: center;
+}
+.block-order {
+    padding-top: 4.68rem;
+    display: flex;
+}
+.order-discount-time {
+    font-size: 6rem;
+    font-weight: 400;
+}
+.block-submit-order {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 4.3rem;
+}
+.block-submit-order {
+    position: relative;
+    display: flex;
+    padding-bottom: 1.3rem;
+}
+.data-processing__checkbox {
+    justify-content: flex-end;
+}
+.form-border {
+    top: 0.6rem;
+    left: 0.6rem;
+    position: absolute;
+    width: 15.6rem;
+    height: 3.1rem;
+    border: 2px solid #fed100;
+    z-index: 1;
+    pointer-events: none;
+}
+.form-btn {
+    width: 15.6rem;
+    height: 3.1rem;
+    font-family: inherit;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    padding-top: 0.93rem;
+    padding-bottom: 0.93rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f2f2f2;
+    background-color: #ff352b;
+    z-index: 2;
+}
+.form-btn::before{
+    content: 'Заказать со скидкой';
+}
+.data-processing {
+    display: none;
+}
+.data-processing-label {
+    margin-top: 1.6rem;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.56rem;
+    user-select: none;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.data-processing-label::before {
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 0.93rem;
+    height: 0.93rem;
+    position: absolute;
+    border-radius: 2px;
+    border: 2px solid #33333366;
+}
+.data-processing:checked + .data-processing-label::before {
+    width: 1rem;
+    height: 1rem;
+    border: none;
+    background: url('/img/icons/form/checked-data-processing.svg') 0 0 no-repeat;
+}
 
 @media (max-width: 64rem) {
     [class*="__container"] {
@@ -683,6 +896,115 @@ body {
         font-weight: 500;
         border: 1px solid;
     }
+    /*---------------------------*/
+    .feedback__form {
+        height: 64rem;
+    }
+    .feedback-form__container {
+        padding: 4.68rem 0;
+    }
+    .feedback-form__title {
+        padding: 0 10rem;
+        text-align: center;
+    }
+    .feedback-form-title-discount {
+        display: none;
+    }
+    form {
+        padding-left: 1rem;
+        padding-right: 0;
+    }
+    .form-title {
+        padding-bottom: 4.25rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .block-contact__input {
+        gap: 5.3rem;
+    }
+    .contact-input {
+        display: block;
+        width: 18.1rem;
+    }
+    .select-location {
+        gap: 5.3rem;
+        padding-bottom: 3.87rem;
+    }
+    .label-title-location {
+        font-size: 1.6rem;
+    }
+    .label-title {
+        font-size: 1.25rem;
+    }
+    .select-input {
+        width: 18.1rem;
+        height: 2.5rem;
+        padding-bottom: 0.87rem;
+    }
+    .block-radio-btn {
+        padding-top: 2.1rem;
+        padding-bottom: 4rem;
+        width: 42.5rem;
+    }
+    .radio-input {
+        display: none;
+    }
+    .radio-inp-text {
+        height: 1.6rem;
+        padding-left: 2.5rem;
+    }
+    .radio-inp-text::before {
+        width: 1.37rem;
+        height: 1.37rem;
+    }
+    .additional-services-checkbox {
+        gap: 40px;
+        padding-top: 2.25rem;
+    }
+    .additional-input {
+        display: none;
+    }
+    .additional-checkbox {
+        padding-left: 2.25rem;
+    }
+    .block-order {
+        padding-top: 4.1rem;
+    }
+    .order-discount-time {
+        display: none;
+    }
+    .block-submit-order {
+        margin-top: 1rem;
+        margin-left: 12rem;
+    }
+    .block-submit-order {
+        padding-bottom: 1.3rem;
+    }
+    .form-border {
+        top: 0.6rem;
+        left: 0.6rem;
+        width: 18.4rem;
+        height: 3.56rem;
+    }
+    .form-btn {
+        width: 18.4rem;
+        height: 3.56rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.25rem;
+    }
+    .data-processing {
+        display: none;
+    }
+    .data-processing-label {
+        margin-top: 1.5rem;
+        padding-left: 1.56rem;
+        font-size: 1rem;
+    }
+    .data-processing-label::before {
+        width: 0.93rem;
+        height: 0.93rem;
+    }
 }
 
 @media (max-width: 47.93rem) {
@@ -967,5 +1289,90 @@ body {
     .review-btn {
         padding: 1rem 5rem;
         white-space: nowrap;
+    }
+    /*---------------------------*/
+    .feedback__form {
+        height: 29.25rem;
+    }
+    .feedback-form__container {
+        padding: 2.3rem 0;
+    }
+    .feedback-form__title {
+        font-size: 1.25rem;
+        padding: 0 3rem;
+        text-align: center;
+    }
+    .feedback-form-title-discount {
+        display: none;
+    }
+    form {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .form-title {
+        padding-bottom: 2.68rem;
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+    .block-contact__input {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-input {
+        display: block;
+        width: 18.1rem;
+        height: 2.5rem;
+    }
+    .select-location {
+        display: none;
+    }
+    .payment-method {
+        display: none;
+    }
+    .additional-services {
+        display: none;
+    }
+    .block-order {
+        padding-top: 0;
+    }
+    .order-discount-time {
+        display: none;
+    }
+    .block-submit-order {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .block-submit-order {
+        padding-bottom: 0;
+    }
+    .form-border {
+        display: none;
+    }
+    .form-btn {
+        width: 18rem;
+        height: 4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    .form-btn::before{
+        content: 'Перезвонить мне';
+    }
+    .data-processing {
+        display: none;
+    }
+    .data-processing__checkbox {
+        padding-left: 1rem;
+    }
+    .data-processing-label {
+        margin-top: 1rem;
+        padding-left: 1.56rem;
+        font-size: 0.75rem;
+    }
+    .data-processing-label::before {
+        width: 0.93rem;
+        height: 0.93rem;
     }
 }

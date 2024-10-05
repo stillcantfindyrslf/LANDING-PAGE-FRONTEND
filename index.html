@@ -312,6 +312,94 @@
                 </div>
             </div>
         </section>
+        <section class="feedback__form">
+            <div class="feedback-form__container">
+                <h1 class="feedback-form__title">Закажи переезд прямо сейчас <span
+                        class="feedback-form-title-discount">со скидкой %</span>
+                </h1>
+                <form method="post" action="/form-submit">
+                    <h2 class="form-title">Мы перезвоним в течении 10 секунд</h2>
+                    <div class="block-contact__input">
+                        <input class="contact-input" type="text" placeholder="Ваше имя">
+                        <input class="contact-input" type="text" placeholder="Телефон">
+                    </div>
+                    <div class="select-location">
+                        <div class="select-region">
+                            <label class="label-title-location" for="region">Укажите область</label>
+                            <select class="select-input" id="region">
+                                <option value="" disabled selected>
+                                    Например: Минская
+                                </option>
+                                <option value="minsk">Минская</option>
+                                <option value="gomel">Гомельская</option>
+                                <option value="brest">Брестская</option>
+                                <option value="vitebsk">Витебская</option>
+                                <option value="mogilev">Могилевская</option>
+                                <option value="grodno">Гродненская</option>
+                            </select>
+                        </div>
+                        <div class="select-city">
+                            <label class="label-title-location" for="city">Укажите город</label>
+                            <select class="select-input" id="city">
+                                <option value="" disabled selected>
+                                    Например: Слуцк
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="payment-method">
+                        <h2 class="label-title">Способ оплаты</h2>
+                        <div class="block-radio-btn">
+                            <div class="radio-btn">
+                                <input class="radio-input" type="radio" name="pay-method" id="cash">
+                                <label class="radio-inp-text" for="cash">Наличные курьеру</label>
+                            </div>
+                            <div class="radio-btn">
+                                <input class="radio-input" type="radio" name="pay-method" id="card"/>
+                                <label class="radio-inp-text" for="card">Картой курьеру</label>
+                            </div>
+                            <div class="radio-btn">
+                                <input class="radio-input" type="radio" name="pay-method" id="card-transfer"/>
+                                <label class="radio-inp-text" for="card-transfer">Банковский перевод</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional-services">
+                        <h2 class="label-title">Дополнительные услуги
+                            <img src="img/icons/arrows/up.svg" alt="Стрелка вверх">
+                        </h2>
+                        <div class="additional-services-checkbox">
+                            <input class="additional-input" type="checkbox" id="call-a-measurer" name="call-a-measurer"/>
+                            <label class="additional-checkbox" for="call-a-measurer">Вызвать замерщика</label>
+
+                            <input class="additional-input" type="checkbox" id="pack-fraigle" name="pack-fraigle"/>
+                            <label class="additional-checkbox" for="pack-fraigle">Упаковка для хрупких предметов</label>
+
+                            <input class="additional-input" type="checkbox" id="crane" name="crane"/>
+                            <label class="additional-checkbox" for="crane">Кран</label>
+                        </div>
+                        <div class="additional-services-checkbox">
+                            <input class="additional-input" type="checkbox" id="assembly-furniture" name="assembly-furniture"/>
+                            <label class="additional-checkbox" for="assembly-furniture">Сборка мебели</label>
+
+                            <input class="additional-input" type="checkbox" id="large-items" name="large-items"/>
+                            <label class="additional-checkbox" for="large-items">Крупногабаритные предметы</label>
+                        </div>
+                    </div>
+                    <div class="block-order">
+                        <div class="order-discount-time">05:37:25</div>
+                        <div class="block-submit-order">
+                            <div class="form-border"></div>
+                            <button type="submit" class="form-btn"></button>
+                            <div class="data-processing__checkbox">
+                                <input class="data-processing" type="checkbox" id="data-processing" name="data-processing"/>
+                                <label class="data-processing-label" for="data-processing">Даю согласие на обработку данных</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         footer
