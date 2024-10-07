@@ -533,6 +533,7 @@ form {
     display: flex;
 }
 .order-discount-time {
+    width: 23rem;
     font-size: 6rem;
     font-weight: 400;
 }
