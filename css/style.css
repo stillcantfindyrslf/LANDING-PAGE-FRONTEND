@@ -487,6 +487,11 @@ form {
     background: url('/img/icons/form/checked-dot.svg') 0 0 no-repeat;
     background-position: center;
 }
+.additional-services__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
 .additional-services-checkbox {
     display: flex;
     gap: 40px;
@@ -524,7 +529,7 @@ form {
     background-position: center;
 }
 .block-order {
-    padding-top: 4.68rem;
+    padding-top: 4rem;
     display: flex;
 }
 .order-discount-time {
