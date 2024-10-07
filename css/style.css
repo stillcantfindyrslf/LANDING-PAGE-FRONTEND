@@ -608,10 +608,81 @@ form {
 /*---------------------------*/
 iframe {
     width: 100vw;
-    height: 41rem;
+    height: 41.62rem;
+}
+.map-container {
+    margin-bottom: -0.3rem;
 }
 .map-contacts {
     display: none;
+}
+/*----------------------------*/
+.footer {
+    height: 25rem;
+    background-color: #fed100;
+}
+.footer__container {
+    padding-top: 7rem;
+    display: flex;
+    gap: 12.5rem;
+}
+.footer__logo {
+
+    font-size: 1.87rem;
+    font-weight: 600;
+    color: #333333;
+}
+.block-logo-policy {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.37rem;
+}
+.policy-agreement,
+.personal-inf {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.footer-item {
+    padding-bottom: 1rem;
+}
+.footer__link {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333333;
+}
+.footer__contacts {
+    width: 19.25rem;
+    padding-top: 12px;
+}
+.footer__btn {
+    text-align: center;
+}
+.callback__btn {
+    margin-bottom: 0.6rem;
+    padding: 0.6rem 1.8rem;
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: 1px solid;
+    color: #333333;
+}
+.phone-num {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+}
+.phone-underline {
+    margin: 0 auto;
+    width: 10.6rem;
+    height: 1px;
+    background-color: #333333;
+}
+.social {
+    padding-top: 1.6rem;
+    display: flex;
+    gap: 3.43rem;
 }
 
 @media (max-width: 64rem) {
@@ -636,7 +707,7 @@ iframe {
     .header__burger {
         display: block;
     }
-/*-------------------------*/
+    /*-------------------------*/
     .banner {
         height: 64rem;
     }
@@ -1015,7 +1086,6 @@ iframe {
     }
     /*---------------------------*/
     iframe {
-        width: 100vw;
         height: 41rem;
     }
     .map-contacts {
@@ -1044,6 +1114,72 @@ iframe {
         width: 12.9rem;
         border: 1px solid;
         margin: 0 auto;
+    }
+    /*----------------------------*/
+    .footer {
+        height: 64rem;
+    }
+    .footer__container {
+        padding-top: 6rem;
+        width: 25.18rem;
+        text-align: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer__logo {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+    }
+    .block-logo-policy {
+        align-items: center;
+        margin: 0 auto;
+        width: 23rem;
+        gap: 1.25rem;
+    }
+    .policy-agreement,
+    .personal-info {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .footer__list {
+        padding-top: 3.25rem;
+    }
+    .footer-item {
+        padding-bottom: 1rem;
+    }
+    .footer__link {
+        font-size: 1.8rem;
+    }
+    .footer__contacts {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .phone-num {
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 0.3rem;
+    }
+    .phone-underline {
+        width: 10.3rem;
+        margin-bottom: 2.1rem;
+    }
+    .social {
+        padding-top: 1.5rem;
+        width: 18.6rem;
+        padding-bottom: 2.1rem;
+        order: 1;
+    }
+    .footer__num {
+        order: 2;
+    }
+    .footer__btn {
+        order: 3;
+    }
+    .callback__btn {
+        font-size: 1.5rem;
+        padding: 0.63rem 2.1rem;
     }
 }
 
@@ -1417,7 +1553,6 @@ iframe {
     }
     /*---------------------------*/
     iframe {
-        width: 100vw;
         height: 30.6rem;
     }
     .map-contacts {
@@ -1441,5 +1576,70 @@ iframe {
         width: 6.6rem;
         border: 1px solid;
         margin: 0 auto;
+    }
+    /*----------------------------*/
+    .footer {
+        height: 44.3rem;
+    }
+    .footer__container {
+        align-items: center;
+        padding: 3.6rem 0;
+        width: 17rem;
+    }
+    .footer__logo {
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+    .block-logo-policy {
+        align-items: normal;
+        margin: 0 auto;
+        width: 15rem;
+        gap: 1.25rem;
+    }
+    .policy-agreement,
+    .personal-info {
+        font-size: 1rem;
+        width: 14.8rem;
+    }
+    .footer__list {
+        padding-top: 2.8rem;
+    }
+    .footer-item {
+        padding-bottom: 1rem;
+    }
+    .footer__link {
+        font-size: 1.25rem;
+    }
+    .footer__contacts {
+        width: 15rem;
+        align-items: center;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .footer__num {
+        width: 15rem;
+    }
+    .phone-num {
+        font-size: 1.25rem;
+        padding-bottom: 0.3rem;
+    }
+    .phone-underline {
+        margin-bottom: 2.1rem;
+    }
+    .footer__btn {
+        width: 21rem;
+    }
+    .social {
+        align-items: center;
+        padding-top: 1rem;
+        width: 14rem;
+        padding-bottom: 1.5rem;
+        gap: 1.8rem;
+    }
+    .callback__btn {
+        font-size: 1rem;
+        padding: 0.93rem 3.8rem;
     }
 }
