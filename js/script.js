@@ -39,3 +39,19 @@ function startTime(hours, minutes, seconds) {
 }
 
 startTime(5, 37, 25);
+
+const menuBtn = document.getElementById("menuBtn");
+const arrowBtn = document.getElementById("arrowBtn")
+const nav = document.getElementById("menu__body");
+
+const showSideMenu = () => {
+    nav.classList.add("show")
+    document.body.classList.add("_lock");
+};
+const hideSideMenu = () => {
+    nav.classList.remove("show");
+    document.body.classList.remove("_lock");
+};
+
+menuBtn.addEventListener("click", showSideMenu);
+arrowBtn.addEventListener("click", hideSideMenu);
