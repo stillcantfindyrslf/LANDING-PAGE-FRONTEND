@@ -181,10 +181,12 @@ body._lock {
 .process-item {
     display: flex;
 }
-.item-desktop__img {
-    width: 3.3rem;
-    height: 3.8rem;
-    margin-right: 1.92rem;
+.step-num{
+    font-weight: 300;
+    font-size: 3.1rem;
+    position: relative;
+    text-shadow: 2px 0 0 #FED100;
+    margin-right: 2.5rem;
 }
 .process-item__title {
     width: 24.1rem;
@@ -498,7 +500,7 @@ form {
 }
 .radio-input:checked + .radio-inp-text::before {
     border: 2px solid #fed100;
-    background: url('/img/icons/form/checked-dot.svg') 0 0 no-repeat;
+    background: url("../img/icons/form/checked-dot.svg") 0 0 no-repeat;
     background-position: center;
 }
 .additional-services__title {
@@ -539,7 +541,7 @@ form {
 .additional-input:checked + .additional-checkbox::before {
     border: 2px solid #fed100;
     border-radius: 2px;
-    background: url('/img/icons/form/checked-box.svg') 0 0 no-repeat;
+    background: url("../img/icons/form/checked-box.svg") 0 0 no-repeat;
     background-position: center;
 }
 .block-order {
@@ -623,7 +625,7 @@ form {
     width: 1rem;
     height: 1rem;
     border: none;
-    background: url('/img/icons/form/checked-data-processing.svg') 0 0 no-repeat;
+    background: url("../img/icons/form/checked-data-processing.svg") 0 0 no-repeat;
 }
 /*---------------------------*/
 iframe {
@@ -848,15 +850,13 @@ iframe {
         padding-top: 3.25rem;
         gap: 3rem;
     }
-    .item-tablet__img {
-        margin-top: -0.7rem;
-        width: 5.75rem;
-        height: 6.6rem;
-        margin-right: 3rem;
+    .step-num {
+        font-size: 5.6rem;
+        margin-right: 3.1rem;
     }
     .process-item__title {
         width: 29rem;
-        padding-top: 0.3rem;
+        padding-top: 1rem;
         padding-bottom: 0.8rem;
         font-size: 1.5rem;
         font-weight: 500;
@@ -1373,17 +1373,15 @@ iframe {
         display: flex;
         align-items: center;
     }
-    .item-mobile__img {
-        margin-top: -0.1rem;
-        width: 3.3rem;
-        height: 3.81rem;
-        margin-right: 1.25rem;
+    .step-num {
+        font-size: 3.1rem;
+        margin-right: 1.3rem;
     }
     .arrow-img-phone {
         display: block;
     }
     .process-item__title {
-        width: 12rem;
+        width: 11.3rem;
         padding-top: 0.3rem;
         padding-bottom: 0.8rem;
         font-size: 1rem;
