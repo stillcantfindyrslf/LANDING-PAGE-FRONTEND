@@ -304,6 +304,7 @@ body._lock {
     margin-bottom: 2.8rem;
 }
 .fleet-btn {
+    font-family: inherit;
     display: flex;
     padding: 0.7rem 3.6rem;
     align-items: center;
@@ -312,8 +313,8 @@ body._lock {
     font-weight: 500;
     border: 1px solid #ebebeb;
 }
-.fleet-btn:nth-child(1) {
-    border: 1px solid #fed100;
+.fleet-btn._active {
+    border: 2px solid #fed100;
 }
 .slider_cards {
     display: flex;
@@ -322,8 +323,15 @@ body._lock {
 }
 .arrow-slider {
     display: block;
+    cursor: pointer;
 }
 .fleet-card__content {
+    padding-top: 3rem;
+}
+.slide {
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
 }
 .fleet-card__title {
     font-size: 1.5rem;
@@ -349,6 +357,10 @@ body._lock {
     justify-content: left;
 }
 .fleet-card__image {
+}
+.card-image {
+    height: 23.1rem;
+    width: 40rem;
 }
 .fleet-dots,
 .fleet-card-item__other-view {
@@ -960,6 +972,11 @@ iframe {
     .fleet-text__container {
         margin-bottom: 2.8rem;
     }
+    .fleet-card__content {
+        padding-top: 0;
+        margin: 0 auto;
+        order: 2;
+    }
     .fleet__title {
         margin-bottom: 1.25rem;
     }
@@ -973,23 +990,26 @@ iframe {
         font-weight: 400;
         border: none;
     }
-    .fleet-btn:nth-child(1) {
+    .fleet-btn._active {
         border: none;
-        border-bottom: 1px solid #fed100;
+        border-bottom: 2px solid #fed100;
     }
-    .slider_cards {
+    .slide {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        max-width: 37rem;
+        gap: 0;
     }
-    .fleet-card__content {
-        order: 2;
+    .slider_cards {
+        flex-direction: column;
+        max-width: 37rem;
     }
     .fleet-card__list {
         margin-top: 0;
         margin-bottom: 3rem;
         align-items: center;
+    }
+    .fleet-card__text {
+        font-size: 1.25rem;
     }
     .arrow-slider,
     .fleet-card-item,
@@ -997,16 +1017,21 @@ iframe {
         display: none;
     }
     .fleet-card-item__other-view {
-        padding-top: 0.75rem;
+        text-align: center;
+        margin-bottom: 2rem;
         display: block;
     }
-    .card-image {
-        width: 32.3rem;
-        height: 22.8rem;
+    .fleet-card__image {
         order: 1;
+    }
+    .card-image {
+        width: 37rem;
+        height: 22.8rem;
     }
     .fleet-dots {
         display: block;
+        text-align: center;
+        margin-bottom: 3.5rem;
     }
     /*-------------------------*/
     .reviews {
@@ -1491,9 +1516,8 @@ iframe {
         font-weight: 400;
         border: none;
     }
-    .fleet-btn:nth-child(1) {
-        border: none;
-        border-bottom: 1px solid #fed100;
+    .slide {
+        gap: 0;
     }
     .slider_cards {
         display: flex;
@@ -1501,32 +1525,27 @@ iframe {
         align-items: center;
         max-width: 37rem;
     }
-    .fleet-card__content {
-        order: 2;
-    }
-    .fleet-card__list {
-        margin-top: 0;
-        margin-bottom: 2rem;
-        align-items: center;
-        gap: 1rem;
-    }
     .arrow-slider,
     .fleet-card-item,
     .fleet-card__title {
         display: none;
         font-size: 0.9rem;
     }
+    .fleet-card__text {
+        font-size: 1rem;
+    }
     .fleet-card-item__other-view {
-        padding-top: 0.5rem;
+        padding-top: 0;
+        margin-bottom: 1rem;
         display: block;
     }
     .card-image {
-        width: 20rem;
-        height: 14.1rem;
-        order: 1;
+        width: 18rem;
+        height: 11.5rem;
     }
     .fleet-dots {
         display: block;
+        margin-bottom: 2.6rem;
     }
     .fleet-dots__img {
         width: 7.12rem;
