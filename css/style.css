@@ -835,7 +835,8 @@ iframe {
         font-size: 1.75rem;
     }
     .header__phone {
-        padding-left: 3rem;
+        margin: 0 auto;
+        text-align: center;
     }
     .header__burger {
         display: block;
@@ -1384,9 +1385,6 @@ iframe {
     }
     .menu__body.show {
         transform: translateX(0px);
-    }
-    .header__phone {
-        padding-left: 4.75rem;
     }
     .phone__number {
         font-size: 1.1rem;
