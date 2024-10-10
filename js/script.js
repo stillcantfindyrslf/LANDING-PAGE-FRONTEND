@@ -40,9 +40,12 @@ function startTime(hours, minutes, seconds) {
 
 startTime(5, 37, 25);
 
+
 const menuBtn = document.getElementById("menuBtn");
 const arrowBtn = document.getElementById("arrowBtn")
 const nav = document.getElementById("menu__body");
+const logo = document.getElementById("logo");
+const menuItems = document.getElementById("menu-items");
 
 const showSideMenu = () => {
     nav.classList.add("show")
@@ -55,6 +58,8 @@ const hideSideMenu = () => {
 
 menuBtn.addEventListener("click", showSideMenu);
 arrowBtn.addEventListener("click", hideSideMenu);
+logo.addEventListener("click", hideSideMenu);
+menuItems.addEventListener("click", hideSideMenu);
 
 
 let currentSlide = 0;
@@ -115,4 +120,13 @@ trukBtn.addEventListener("click", () => {
     showSlide(2);
     removeActive();
     trukBtn.classList.add("_active");
+});
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });

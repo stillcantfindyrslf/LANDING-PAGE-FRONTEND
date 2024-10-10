@@ -10,20 +10,20 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="header">
+    <header id="main" class="header">
         <div class="header__container">
             <div class="header__menu">
-                <a href="" class="header__logo">MOVING</a>
+                <a id="logo" href="#main" class="header__logo">MOVING</a>
                 <nav id="menu__body" class="menu__body">
                     <div id="arrowBtn" class="arrow__menu">
                         <img src="img/icons/arrows/right-side-nav.svg" class="arrow-menu-img" alt="стрелка вправо">
                     </div>
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Цены</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Автопарк</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                    <ul id="menu-items" class="menu__list">
+                        <li class="menu__item"><a href="#main" class="menu__link">Главная</a></li>
+                        <li class="menu__item"><a href="#price" class="menu__link">Цены</a></li>
+                        <li class="menu__item"><a href="#fleet" class="menu__link">Автопарк</a></li>
+                        <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
+                        <li class="menu__item"><a href="#footer" class="menu__link">Контакты</a></li>
                     </ul>
                     <div class="header__phone">
                         <a href="" class="phone__number">8(029)-999-12-13</a>
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section id="price" class="price">
             <div class="price__container">
                 <div class="price-text__container">
                     <h1 class="price__title">Цены</h1>
@@ -190,7 +190,7 @@
                 </div>
             </div>
         </section>
-        <section class="fleet">
+        <section id="fleet" class="fleet">
             <div class="fleet__container">
                 <div class="fleet-text__container">
                     <div class="fleet__title">Автопарк</div>
@@ -319,7 +319,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section id="reviews" class="reviews">
             <div class="reviews__container">
                 <h1 class="reviews__title">Отзывы</h1>
                 <div class="block-comments">
@@ -494,7 +494,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="footer__container">
             <div class="block-logo-policy">
                 <a href="#" class="footer__logo">MOVING</a>
@@ -507,19 +507,19 @@
                 <nav class="footer__menu">
                     <ul class="footer__list">
                         <li class="footer-item">
-                            <a href="#" class="footer__link">Главная</a>
+                            <a href="#main" class="footer__link">Главная</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer__link">Цены</a>
+                            <a href="#price" class="footer__link">Цены</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer__link">Автопарк</a>
+                            <a href="#fleet" class="footer__link">Автопарк</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer__link">Отзывы</a>
+                            <a href="#reviews" class="footer__link">Отзывы</a>
                         </li>
                         <li class="footer-item">
-                            <a href="#" class="footer__link">Контакты</a>
+                            <a href="#footer" class="footer__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>

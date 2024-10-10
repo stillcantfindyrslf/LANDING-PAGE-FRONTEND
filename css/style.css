@@ -724,6 +724,10 @@ iframe {
     font-weight: 500;
     color: var(--text-color);
 }
+.footer__link:hover {
+    font-weight: 700;
+    color: #FF352B;
+}
 .footer__contacts {
     width: 19.25rem;
     padding-top: 12px;
